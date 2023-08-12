@@ -1,8 +1,9 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ReorientConnections {
+
     public int minReorientConnections(int n, int[][] connections) {
+        
         // Create the adjacency list to represent the tree
         List<Integer>[] graph = new ArrayList[n];
         for (int i = 0; i < n; i++) {
