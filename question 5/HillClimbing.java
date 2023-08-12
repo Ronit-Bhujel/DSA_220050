@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class HillClimbing {
     public static void main(String[] args) {
+
         // Define the problem domain and initial solution
         int[] initialSolution = {2, 5, 8, 3, 1, 6, 4, 7};
         int maxIterations = 1000;
@@ -46,6 +47,7 @@ public class HillClimbing {
     }
 
     public static int evaluate(int[] solution) {
+
         // Objective function: higher values are better
         int score = 0;
         for (int i = 0; i < solution.length - 1; i++) {
@@ -53,6 +55,7 @@ public class HillClimbing {
                 score++;
             }
         }
+        
         return score;
     }
 
@@ -62,4 +65,5 @@ public class HillClimbing {
         }
         System.out.println();
     }
+
 }
