@@ -1,8 +1,8 @@
-import java.util.PriorityQueue;
-import java.util.Collections;
+import java.util.*;
 
 public class MaxPriorityQueue {
     public static void main(String[] args) {
+
         // Create a max priority queue
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
 
@@ -18,4 +18,5 @@ public class MaxPriorityQueue {
             System.out.print(maxHeap.poll() + " ");
         }
     }
+    
 }
