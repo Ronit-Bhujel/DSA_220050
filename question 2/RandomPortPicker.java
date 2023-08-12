@@ -1,6 +1,4 @@
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 public class RandomPortPicker {
     private Set<Integer> whitelist;
@@ -29,13 +27,15 @@ public class RandomPortPicker {
             }
             randomIndex--;
         }
+        
         return randomPort;
     }
 
     public static void main(String[] args) {
         int[] blacklisted_ports = {2, 3, 5};
         RandomPortPicker picker = new RandomPortPicker(7, blacklisted_ports);
-        System.out.println(picker.get()); // Output: 0
-        System.out.println(picker.get()); // Output: 4
+        System.out.println(picker.get()); // output: any number frim [0, 1, 4, 6] should be ok. 
+        System.out.println(picker.get()); 
     }
+
 }
