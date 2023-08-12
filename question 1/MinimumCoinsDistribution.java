@@ -1,4 +1,5 @@
 public class MinimumCoinsDistribution {
+
     public static int minCoins(int[] ratings) {
         int n = ratings.length;
         int[] coins = new int[n];
@@ -25,7 +26,6 @@ public class MinimumCoinsDistribution {
         for (int coin : coins) {
             sum += coin;
         }
-
         return sum;
     }
 
@@ -34,4 +34,5 @@ public class MinimumCoinsDistribution {
         int result = minCoins(ratings);
         System.out.println("Minimum coins required: " + result); // Output: 5
     }
+    
 }
