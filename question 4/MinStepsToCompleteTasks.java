@@ -1,7 +1,9 @@
 import java.util.*;
 
 public class MinStepsToCompleteTasks {
+
     public int minSteps(int N, int[][] prerequisites) {
+
         List<Integer>[] graph = new ArrayList[N + 1];
         for (int i = 1; i <= N; i++) {
             graph[i] = new ArrayList<>();
@@ -34,6 +36,7 @@ public class MinStepsToCompleteTasks {
                     }
                 }
             }
+
             steps++;
         }
 
@@ -45,6 +48,7 @@ public class MinStepsToCompleteTasks {
         int N = 3;
         int[][] prerequisites = {{1, 3}, {2, 3}};
         int result = minSteps.minSteps(N, prerequisites);
-        System.out.println("Minimum steps needed: " + result); // Output: 2
+        System.out.println("Minimum steps needed: " + result); 
     }
+
 }
