@@ -1,5 +1,7 @@
 public class MaxPointsByHittingTargets {
+
     public static int maxPoints(int[] a) {
+
         int n = a.length;
         int[] dpLeft = new int[n + 2];
         int[] dpRight = new int[n + 2];
@@ -27,6 +29,7 @@ public class MaxPointsByHittingTargets {
     public static void main(String[] args) {
         int[] a = {3, 1, 5, 8};
         int result = maxPoints(a);
-        System.out.println("Maximum points: " + result); // Output: 167
+        System.out.println("Maximum points: " + result); 
     }
+
 }
