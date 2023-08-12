@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class ParallelMergeSort {
     private static final int NUM_THREADS = Runtime.getRuntime().availableProcessors(); // Use all available cores
@@ -77,4 +77,5 @@ public class ParallelMergeSort {
         parallelMergeSort(arr);
         System.out.println("Sorted Array: " + Arrays.toString(arr));
     }
+    
 }
